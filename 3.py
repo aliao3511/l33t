@@ -9,3 +9,6 @@ class Solution:
             longest = max(end - start + 1, longest)
             chars[ch] = end
         return longest
+
+# time complexity: O(N) - iterate through string
+# space complexity: O(N) - at most N unique chars within dict
