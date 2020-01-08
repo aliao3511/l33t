@@ -2,7 +2,7 @@ class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         carry = 1
         idx = len(digits) - 1
-        while idx >= 0:
+        while idx >= 0 and carry > 0:
             if carry == 1:
                 digits[idx] += 1
                 carry = 0
