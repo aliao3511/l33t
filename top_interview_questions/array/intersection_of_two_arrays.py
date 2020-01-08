@@ -1,10 +1,14 @@
 from collections import defaultdict
 
 class Solution:
-    # if not sorted 
+    # if not sorted or if one array is much larger than other
     # def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        # to_hash = nums2 if len(nums1) > len(nums2) else nums1
-        # other = nums2 if to_hash == nums1 else nums1
+        # if len(nums2) > len(nums1):
+          # to_hash = nums1
+          # other = nums2
+        # else
+          # to_hash = nums2
+          # other = nums1
         # hash_counts = defaultdict(lambda: 0)
         # for idx, num in enumerate(to_hash):
             # hash_counts[num] += 1
@@ -35,4 +39,4 @@ class Solution:
 		intersection_count += 1
 		idx1 += 1
 		idx2 += 1
-	return nums1[:intersecion_count] 
+	return nums1[:intersection_count] 
