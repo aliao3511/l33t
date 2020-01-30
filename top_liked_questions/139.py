@@ -11,8 +11,6 @@ def wordBreak(s, wordDict):
         while idx <= len(s):
             substring = s[start:idx]
             if substring in word_set:
-                print(queue)
-                print(substring)
                 if idx == len(s): return True
                 queue.insert(0, idx)
             idx += 1
