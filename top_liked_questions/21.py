@@ -24,3 +24,24 @@ class Solution:
                 second = second.next
                 head = head.next
         return dummy.next
+
+    # modifying inputs
+'''
+        first = l1
+        second = l2
+        dummy = ListNode(0)
+        head = dummy
+        while first and second:
+            if first.val > second.val:
+                head.next = second
+                second = second.next
+            else:
+                head.next = first
+                first = first.next
+            head = head.next
+        if first:
+                head.next = first
+        else:
+                head.next = second
+        return dummy.next
+'''
